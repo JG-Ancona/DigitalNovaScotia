@@ -1,0 +1,2 @@
+# DigitalNovaScotia
+Course work snippets
