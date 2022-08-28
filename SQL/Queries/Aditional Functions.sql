@@ -18,4 +18,9 @@ SELECT	CONCAT(first_name, ' ', last_name) AS FullName,
 FROM actor
 
 --- LENGTH fun 
+SELECT	CONCAT(first_name, ' ', last_name) AS FullName,
+		LEN(CONCAT(first_name, ' ', last_name)) AS Lenght,
+		CONCAT(LEFT(first_name,1), ' ', LEFT(last_name,1)) AS FirstInitial
+FROM actor
 
+---changes test
