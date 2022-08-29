@@ -52,4 +52,47 @@ FROM actor
 -----------------------
 -- Distinc operations
 -----------------------
-S
+SELECT last_name
+FROM actor
+
+SELECT DISTINCT last_name
+FROM actor
+
+
+-----------------------------
+-- WHERE clause comparison --
+-----------------------------
+
+SELECT actor_id, first_name, last_name
+FROM actor
+WHERE actor_id = 110
+
+SELECT actor_id, first_name, last_name
+FROM actor
+WHERE first_name = 'Nick'
+
+SELECT actor_id, first_name, last_name
+FROM actor
+WHERE actor_id < 110
+
+SELECT actor_id, first_name, last_name
+FROM actor
+WHERE first_name < 'Nick'
+
+SELECT actor_id, first_name, last_name
+FROM actor
+WHERE actor_id > 110;
+
+SELECT actor_id, first_name, last_name
+FROM actor
+WHERE first_name >= 'Nick';
+
+SELECT actor_id, first_name, last_name
+FROM actor
+WHERE first_name != 'Nick';
+
+SELECT actor_id, first_name, last_name
+FROM actor
+WHERE actor_id = 110;
+
+-------------------------------
