@@ -214,3 +214,31 @@ SELECT *
 FROM address
 WHERE address2 IS NOT NULL;
 
+--- Order clause
+
+SELECT *
+FROM address
+ORDER BY district DESC;
+
+SELECT *
+FROM address
+ORDER BY district, postal_code DESC;
+
+SELECT actor_id, CONCAT(first_name, ' ', last_name) AS FullName
+FROM actor
+ORDER BY FullName
+
+
+SELECT actor_id, CONCAT(first_name, ' ', last_name) AS FullName
+FROM actor
+ORDER BY 1;
+
+----- LIMIT clause
+SELECT TOP(5) *
+FROM actor
+WHERE actor_id>5
+ORDER BY actor_id;
+
+
+
+
