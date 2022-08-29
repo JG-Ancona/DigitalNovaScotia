@@ -96,3 +96,121 @@ FROM actor
 WHERE actor_id = 110;
 
 -------------------------------
+
+SELECT * 
+FROM actor
+WHERE first_name = 'Kenneth';
+
+SELECT * 
+FROM actor
+WHERE first_name = 'Kenneth' AND actor_id<100;
+
+
+SELECT * 
+FROM actor
+WHERE first_name = 'Kenneth' AND actor_id<100 AND last_name='TORN';
+
+--OR Conditional
+
+SELECT * 
+FROM actor
+WHERE first_name = 'Kenneth' OR actor_id<100;
+
+
+SELECT * 
+FROM actor
+WHERE first_name = 'Kenneth' OR actor_id<100 OR last_name='TEMPLE';
+
+
+--- NOT conditional
+
+SELECT *
+FROM actor
+WHERE NOT actor_id=5;
+
+--- All together
+
+SELECT *
+FROM actor
+WHERE first_name = 'KENNETH' OR last_name = 'TEMPLE' AND actor_id < 100;
+
+SELECT *
+FROM actor
+WHERE (first_name = 'KENNETH' AND actor_id < 100) OR last_name = 'TEMPLE';
+
+
+SELECT *
+FROM actor
+WHERE first_name = 'KENNETH' AND (actor_id < 100 OR last_name = 'TEMPLE');
+
+
+--- IN
+
+SELECT *
+FROM actor
+WHERE first_name IN ('nick', 'Johnny', 'joe', 'vivien');
+
+
+SELECT *
+FROM actor
+WHERE actor_id IN (1,2,3,4,5,6);
+
+--- NOT IN
+
+SELECT *
+FROM actor
+WHERE actor_id NOT IN (1,2,3,4,5,6);
+
+---- In subquery
+
+SELECT * 
+FROM actor
+WHERE first_name in ('Nick', 'Johnny', 'Joe', 'Vivien')
+		OR actor_id IN
+					( SELECT actor_id
+					FROM actor
+					WHERE last_name = 'DEGENERES');
+
+--- BETWEEN
+
+SELECT *
+FROM actor
+WHERE actor_id > 10 AND actor_id < 20;
+
+SELECT *
+FROM actor
+WHERE actor_id BETWEEN 10 and 20;
+
+SELECT *
+FROM actor
+WHERE actor_id NOT BETWEEN 10 and 20;
+
+
+--- LIKE
+
+SELECT *
+FROM actor
+WHERE first_name LIKE 'AL%';
+
+
+SELECT *
+FROM actor
+WHERE first_name LIKE 'A__E';
+
+SELECT *
+FROM actor
+WHERE first_name LIKE 'A__E%';
+
+---NULL
+
+SELECT *
+FROM address;
+
+SELECT *
+FROM address
+WHERE address2 IS NULL;
+
+SELECT *
+FROM address
+WHERE address2 IS NOT NULL;
+
