@@ -23,4 +23,33 @@ SELECT	CONCAT(first_name, ' ', last_name) AS FullName,
 		CONCAT(LEFT(first_name,1), ' ', LEFT(last_name,1)) AS FirstInitial
 FROM actor
 
----changes test
+---Various fun
+
+SELECT	CONCAT(first_name, ' ', last_name) AS FullName, 
+		REVERSE(CONCAT(first_name, ' ', last_name)) AS ReverseFullName,
+		REPLACE(CONCAT(first_name, ' ', last_name), 'S', '$') AS ReplaceExample
+FROM actor;
+
+-----------------------
+--- DATE Operations ---
+-----------------------
+
+SELECT	CONCAT(first_name,' ',last_name) AS c,
+		FORMAT(last_update, 'MM-dd-yy') AS LastUpdate1,
+		FORMAT(last_update, 'dd/MM/yyyy') AS LastUpdate2,
+		FORMAT(last_update, 'dd/MMM/yyyy hh:mm:ssss') AS LastUpdate3,
+		last_update
+FROM actor;
+
+---- DATE FORMAT with GET FORMAT funct
+
+SELECT	CONCAT(first_name, ' ', last_name) AS FullName,
+		FORMAT(last_update, 'd', 'ISO') as LastUpdate1,
+		FORMAT(last_update, 'd', 'fr-FR') as LastUpdate1,
+		last_update
+FROM actor
+
+-----------------------
+-- Distinc operations
+-----------------------
+S
