@@ -1,0 +1,39 @@
+--CREATE DATABASE Test;
+
+USE Test;
+
+CREATE TABLE Table1
+(ID INT, Value VARCHAR(10));
+
+INSERT INTO Table1 (ID, Value)
+	SELECT 1, 'First'
+	UNION ALL
+	SELECT 2, 'Second'
+	UNION ALL
+	SELECT 3, 'Third'
+	UNION ALL
+	SELECT 4, 'Fourth'
+	UNION ALL
+	SELECT 5, 'Fifth';
+
+
+CREATE TABLE Table2
+(ID INT, Value VARCHAR(10));
+
+INSERT INTO Table2 (ID, Value)
+	SELECT 6, 'Sixth'
+	UNION ALL
+	SELECT 7, 'Seventh'
+	UNION ALL
+	SELECT 8, 'Eight'
+	UNION ALL
+	SELECT 9, 'Ninth'
+	UNION ALL
+	SELECT 10, 'Tenth';
+
+SELECT *
+FROM Table1;
+SELECT *
+FROM Table2;
+
+-- INNER JOIN
