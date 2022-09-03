@@ -69,3 +69,24 @@ SELECT	t1.ID AS T1ID, t1.Value AS T1Value,
 		t2.ID T2ID, t2.Value AS T2Value
 FROM Table1 t1
 RIGHT JOIN Table2 t2 ON t1.ID = t2.ID;
+
+-- FULL OUTER JOIN
+
+SELECT	t1.ID AS T1ID, t1.Value AS T1Value,
+		t2.ID T2ID, t2.Value AS T2Value
+FROM Table1 t1
+FULL OUTER JOIN Table2 t2 ON t1.ID = t2.ID;
+
+-- LEFT and RIGHT JOIN -> FULL OUTER JOIN
+
+SELECT	t1.ID AS T1ID, t1.Value AS T1Value,
+		t2.ID T2ID, t2.Value AS T2Value
+FROM Table1 t1
+LEFT JOIN Table2 t2 ON t1.ID = t2.ID
+UNION
+SELECT	t1.ID AS T1ID, t1.Value AS T1Value,
+		t2.ID T2ID, t2.Value AS T2Value
+FROM Table1 t1
+RIGHT OUTER JOIN Table2 t2 ON t1.ID = t2.ID;
+
+
