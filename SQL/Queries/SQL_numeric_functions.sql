@@ -22,5 +22,8 @@ SELECT POWER(8,-2);
 SELECT SQRT(4);
 SELECT SQRT(64);
 
---
+-- Table example
 
+SELECT amount, ROUND(amount,0) Amount,
+		amount-0.5, ROUND(amount-0.5,2) R_Amount
+FROM sakila.dbo.payment
