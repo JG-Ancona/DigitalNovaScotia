@@ -1,5 +1,3 @@
-from operator import contains
-
 
 contacts = {
     "number":4,
@@ -12,5 +10,5 @@ contacts = {
     ]
 }
 
-for student in contains["students"]:
+for student in contacts["students"]:
     print(student)
