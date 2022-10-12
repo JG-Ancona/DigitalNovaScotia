@@ -9,4 +9,7 @@ url = 'http://api.openweathermap.org/data/2.5/weather?q='+city+'&units=imperial&
 request = requests.get(url)
 
 json = request.json()
-print(json)
+#print(json)
+
+desciption = json.get("weather")[0].get("description")
+print("Today's forecast is:",desciption)
