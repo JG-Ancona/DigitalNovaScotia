@@ -11,4 +11,4 @@ contacts = {
 }
 
 for student in contacts["students"]:
-    print(student)
+    print(student["email"])
