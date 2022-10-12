@@ -10,7 +10,7 @@ def rolldice():
 player1 = input("Enter player 1's name: ")
 player2 = input("Enter player 2's name: ")
 
-roll1 = random.randint(1,6) + random.randint(1,6)
-
-roll = rolldice()
-print(roll)
+roll1 = rolldice()
+roll2 = rolldice()
+print(player1, 'rolled', roll1)
+print(player2, 'rolled', roll2)
