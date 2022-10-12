@@ -10,14 +10,15 @@ months = int(input("How many months do you want to see results for?\n"))
 # Divide apr by 100 to make it a percent, then divide by 12 to make monthly
 monthly_rate = apr/100/12
 
-# Add interes
+for i in range(months):
 
-interest_paid = money_owned * monthly_rate
-money_owned = money_owned + interest_paid
+    # Add interes
+    interest_paid = money_owned * monthly_rate
+    money_owned = money_owned + interest_paid
 
-# Make a payment
-money_owned = money_owned - payment
+    # Make a payment
+    money_owned = money_owned - payment
 
-# Print the result after this month
-print("Paid", payment, "of which", interest_paid, "was interes", end=' ')
-print("Now I owe", money_owned)
+    # Print the result after this month
+    print("Paid", payment, "of which", interest_paid, "was interes", end=' ')
+    print("Now I owe", money_owned)
