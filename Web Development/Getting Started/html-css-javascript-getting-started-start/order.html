@@ -5,6 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="site.css" type="text/css">
+    <style>
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group input,
+        .input-group textarea,
+        .input-group select {
+            padding: 10;
+            border: solid 1px #999;
+            border-radius: 2px;
+            width: 100%;
+        }
+
+        label {
+            font-weight: 600;
+        }        
+
+        input[type="reset"]{
+            background: transparent;
+            border: 0;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        input[type="submit"]{
+            border: solid 1px #999;
+            border-radius: 3px;
+            padding: 10px;
+        }
+
+    </style>
     <title>Bethany's Pie Shop</title>
 </head>
 <body>
@@ -113,6 +145,8 @@
                     </div>
                 </div>
 
+                <input type="reset" value="Reset"/>
+                <input type="submit" value="Order"/>
             </form>
         </article>
     </main>
