@@ -65,6 +65,25 @@
             display: block;
         }
     </style>
+
+    <script>
+        function save() {
+            localStorage.setItem("applepie",true);
+        }
+
+        window.onload = function(){
+            var favorite = document.getElementById('favorite');
+            if (window.localStorage)
+            {
+                var storage = window.localStorage;
+                if(storage.getElementById('applepie')=='true')
+                {
+                    favorite.innerHTML = "Apple pie is one of your favorites"
+                }
+            }
+        }
+    </script>
+
 </head>
 
 <body>
@@ -89,9 +108,16 @@
                     <h1 style="font-size:35px;color:#a593c2">Apple pie</h1>
                 </header>
                 <figure>
-                    <img src="images/products/applepie.jpg" width="600" alt="Apple pie" />
+                    <a href="images/products/applepie.jpg" target="_blank>">
+                        <img src="images/products/applepie.jpg" width="600" alt="Apple pie" />
+                    </a>
                     <figcaption>Our world-famous apple pie</figcaption>
                 </figure>
+
+                <p>
+                    <button onclick="save()" type="button">Save as favorite</button>
+                    <span id="favorite"></span>
+                </p>
 
 
                 <div style="background-color:#f8f4f1;">
