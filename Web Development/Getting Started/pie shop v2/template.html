@@ -7,73 +7,41 @@
     <meta name="author" content="Bethany's Pie Shop">
     <meta name="description" content="Store fron for Bethany's Pie Shop">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
     <title>Welcome to Bethany's Pie Shop</title>
-    <style>
-        body {
-            margin-top: 0px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #e6e4d9;
-            background-image: url('images/pattern.png');
-        }
 
-        #mainheader {
-            background-color: #a593c2;
-        }
-
-        nav {
-            height: 60px;
-            width: 1000px;
-            margin: 0 auto 20px;
-        }
-
-        #leftmenu {
-            float: left;
-            width: 30%;
-            margin-bottom: 20px;
-        }
-
-        .searchbox {
-            padding: 5px;
-            margin: 10px 10px;
-            width: 200px;
-        }
-
-        #main {
-            float: right;
-            width: 70%;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            clear: both;
-            width: 100%;
-        }
-
-    </style>
 
 </head>
 <body>
     <header id="mainheader">
         <nav>
-            <!--<img src="images/pie.png" height="55">-->
-            <img src="images/cake.svg" height="55"/>
-
+            <ul>                
+                <li><img src="images/cake.svg" height="55"/></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pieoverview.html">All pies</a></li>
+            </ul>
         </nav>
 
     </header>
 
     <div style="width: 1000px;margin-left: auto;margin-right: auto;">
+
         <aside id="leftmenu">
-            <img src="images/bethanylogo.png" />
+            <a href="index.html"><img src="images/bethanylogo.png" /></a>
             <header>
                 <h4 style="text-align: center;">Brows our pies</h4>
             </header>
+            <ul>
+                <li><a href="pieoverview.html">All pies</a></li>
+                <li><a href="cheesecakes.html">Cheese cakes</a></li>
+                <li><a href="fruitpies.html">Fruit pies</a></li>
+                <li><a href="seasonpies.html">Seasonal pies</a></li>
+                <li><a href="#promos">Promotions</a></li>
+            </ul>
             <input type="search" class="searchbox" placeholder="Search our store" />
 
         </aside>
-
+        
         <main id="main">
 
         </main>
