@@ -30,7 +30,7 @@
     left: 0vw;
 }
 
-li {
+.nav_menu li {
     list-style-type: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -74,6 +74,39 @@ main {
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30pt;
+    font-size: 50pt;
     text-align: center; 
+}
+
+h2 {
+    
+    font-family: Helvetica;
+    color: green;
+    text-decoration: underline;
+    font-size: 30pt;
+    
+}
+
+.city {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    gap: 15px;
+    margin: 10px 0 10px 0;
+}
+
+.content {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.info_date {
+    list-style-type: none;
+    padding: 0;
+    margin: 10 auto 10 auto;
+}
+
+.city p {
+    margin-bottom: 20px;
 }
