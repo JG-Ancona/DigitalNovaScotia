@@ -23,7 +23,7 @@
     left: -20vw;
     transition: all 500ms;
     text-align: left;
-    z-index: 1000;
+    z-index: 1000;                          /*Allows bring the nav menu to in front of all elements*/
     
 }
 
@@ -92,7 +92,7 @@ h2 {
     
 }
 
-.city {
+.city {                             /*Everything orginized as blocks inside .city*/
     display: flex;
     flex-direction: column; 
     justify-content: space-evenly;
@@ -116,6 +116,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Changes for media query */
 
 @media only screen and (max-width: 800px) {
 
