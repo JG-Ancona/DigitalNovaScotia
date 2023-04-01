@@ -17,10 +17,56 @@
 
     $hasValue = "Hello World";
 
-    var_dump((bool)$hasValue);
+    //var_dump((bool)$hasValue);
 
 //Define constants
 
-    define('NEW_CONSTANT', "Hello World");
+//    define('NEW_CONSTANT', "Hello World");
 
-    echo NEW_CONSTANT;
+//    echo NEW_CONSTANT;
+
+//Functions
+
+    function listOfBooks()
+    {
+        echo "Hamlet\n";
+        echo "Shakespeare, William\n";
+    }
+
+//listOfBooks();
+
+//  function bookByAuthor($AuthorName)
+//  {
+//     echo $AuthorName;
+//  }
+
+//  bookByAuthor("William Shakespeare");
+
+//  $authorName = "William Shakespeare.";
+
+//  bookByAuthor($authorName);
+
+ //function with defined parameter
+
+ function bookByAuthorYear($tempAuthorName,$tempYear = 1910)
+ {
+    echo $tempYear;
+    echo "\n";
+    echo $tempAuthorName;
+    echo "\n";
+ }
+
+//  $year = 1920;
+//  $authorName = "William Shakespeare";
+
+//  bookByAuthorYear($authorName);
+
+// Return value from function
+
+function getAuthor()
+{
+    return "Charles Dickens";
+}
+
+$authorName = getAuthor();
+bookByAuthorYear($authorName);
