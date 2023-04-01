@@ -63,10 +63,75 @@
 
 // Return value from function
 
-function getAuthor()
-{
-    return "Charles Dickens";
-}
+// function getAuthor()
+// {
+//     return "Charles Dickens";
+// }
 
-$authorName = getAuthor();
-bookByAuthorYear($authorName);
+// $authorName = getAuthor();
+// bookByAuthorYear($authorName);
+
+
+// String creation
+
+// $currency = "penny";
+
+// $sampleString = "A $currency saved is a $currency earned.\n"; // Adds variable into string
+
+// echo $sampleString;
+
+// $var = 2;
+
+// //echo $var."nd place";
+// echo "{$var}nd place";
+// echo "\n";
+/*
+// String built-in functions
+
+$quote = "To be or not to be?, that is the question.";
+echo $quote;
+echo "\n";
+
+
+//$quote = strtoupper($quote);
+
+// length of string
+$length = strlen($quote);
+echo $length;
+echo "\n";
+
+// position inside string
+echo strpos($quote,"be",5);
+echo "\n";
+
+// replace string
+
+$replaced = str_replace("be", "know", $quote,$count);
+echo $replaced;
+echo "\n";
+echo $count;
+echo "\n";
+
+// substring
+
+$substring = substr($quote,2,-4);
+echo $substring;
+echo "\n";
+
+///// Arrays
+
+$authors = array("Charles Dickens", "Jane Austin", "William Shakespeare", "Mark Twain");
+$books = ["Little Women", "Jane Eyre", "Richard III"];
+
+print_r($books);
+print_r($authors);
+
+*/
+
+$authors = array(
+        "quarky" => "Charles Dickens",
+        "brillian" => "Jane Austin",
+        "poetic" => "William Shakespeare"
+);
+
+print_r($authors); 
