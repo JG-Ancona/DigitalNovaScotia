@@ -126,7 +126,7 @@ $books = ["Little Women", "Jane Eyre", "Richard III"];
 print_r($books);
 print_r($authors);
 
-*/
+
 
 $authors = array(
         "quarky" => "Charles Dickens",
@@ -135,3 +135,29 @@ $authors = array(
 );
 
 print_r($authors); 
+
+
+$authors = array("Charles Dickens", "Jane Austin", "William Shakespeare", "Mark Twain");
+
+array_push($authors, "Louisa May Alcott");
+$authors[] = "L.M. Montgomery";
+
+$last_value = array_pop($authors);
+
+echo $last_value;
+print_r($authors);
+
+*/
+
+///  For each loop
+
+$authors = array(
+    "quarky" => "Charles Dickens",
+    "brillian" => "Jane Austin",
+    "poetic" => "William Shakespeare"
+);
+
+foreach($authors as $key => $val)
+{
+    echo $val."(".$key.")\n";
+}
