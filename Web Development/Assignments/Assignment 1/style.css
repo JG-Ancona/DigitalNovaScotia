@@ -44,6 +44,10 @@
     text-indent: 0px;
 }
 
+.nav_menu a {
+    color: white;
+}
+
 main {
     max-width: 1200px;
     margin-left: auto;
