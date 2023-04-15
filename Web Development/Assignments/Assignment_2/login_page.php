@@ -1,6 +1,3 @@
-<?php
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halifax Canoe and Kayak</title>
-    <link rel="stylesheet" href="/Assignments/Assignment_1/style.css">
+    <link rel="stylesheet" href="./../Assignment_1/style.css">
     <link rel="stylesheet" href="login.css">
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/paddle-white.png">
 </head>
