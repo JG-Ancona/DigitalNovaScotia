@@ -18,7 +18,7 @@
             <ul class="nav_menu">
                 <li>Home</li>
                 <li>Book a trip</li>
-                <li><a href="/Assignments/Assignment 2/admin_login.html">Admin login</a></li>
+                <li><a href="./../Assignment 2/admin_login.php">Admin login</a></li>
 
             </ul>
         </nav>
