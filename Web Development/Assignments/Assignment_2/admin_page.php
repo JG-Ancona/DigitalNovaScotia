@@ -30,7 +30,8 @@
             <a href="./../Assignment_2/admin_login.html">Log out</a>
         </div>
         <div class="welcome_user">
-            <h1>Hello $user</h1>
+            <?php $user_name= $_POST['Last_name'].', '.$_POST['First_name'];?>
+            <h1>Hello <?php echo $user_name;?></h1>
         </div>
         
         <div class="user_menu">
@@ -39,6 +40,11 @@
                 <li><a href="./../Assignment_2/not_working_page.html">My computer is not working</a></li>
                 <li><a href="mailto:email@example.com">New account</a></li>
             </ul>
+        </div>
+        <div>
+            <?php
+                print_r($_POST);
+            ?>
         </div>
         
         
