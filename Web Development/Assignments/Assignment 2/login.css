@@ -39,5 +39,22 @@ button {
     padding: 10px;
 }
 
+.log_out {
+    text-align: right;
+    margin: 10px auto 30px auto;
+}
 
- 
+.welcome_user {
+    border-bottom: 1px solid black;
+}
+
+.welcome_user > h1 {
+    text-align: left;
+}
+
+.user_menu > h2{
+    margin: 10px 0 10px 0;
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+}
