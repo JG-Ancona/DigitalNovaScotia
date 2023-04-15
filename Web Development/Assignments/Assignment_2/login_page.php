@@ -31,7 +31,7 @@
             <p class="form_header">
                 Welcome to your IT Suppport System
             </p>
-            <form class="form_grid">
+            <form class="form_grid" method="post">
                 <div>
                     <br>Title:<br>
                     <select name="title" id="title">
