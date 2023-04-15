@@ -31,7 +31,7 @@
             <p class="form_header">
                 Welcome to your IT Suppport System
             </p>
-            <form class="form_grid" method="post">
+            <form class="form_grid" method="post" action="admin_page.php">
                 <div>
                     <br>Title:<br>
                     <select name="title" id="title">
@@ -44,7 +44,7 @@
                 <div>
                     <br>
                     First Name:<br>
-                    <input type="text" name="first_name">
+                    <input type="text" name="First_name">
                 </div>
                 <div>
                     <br>
@@ -69,6 +69,6 @@
     </main>
     <!-- Call to scripts sources -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="./..Assignment_1/script.js"></script>
+    <script src="./../Assignment_1/script.js"></script>
 </body>
 </html>
