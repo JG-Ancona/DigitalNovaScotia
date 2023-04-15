@@ -52,9 +52,17 @@ button {
     text-align: left;
 }
 
-.user_menu > h2{
-    margin: 10px 0 10px 0;
+.user_menu > h2 {
+    margin: 10px 0 20px 0;
     color: black;
     font-style: normal;
     text-decoration: none;
+}
+
+.user_menu > ul {
+    font-size: 20px;
+}
+
+.user_menu > ul > li {
+    margin: 10px 0 10px 0;
 }
