@@ -18,7 +18,7 @@
             <ul class="nav_menu">
                 <li>Home</li>
                 <li>Book a trip</li>
-                <li><a href="/Assignments/Assignment_2/admin_login.html">Admin login</a></li>
+                <li><a href="./../Assignment_2/admin_login.html">Admin login</a></li>
 
             </ul>
         </nav>
@@ -69,6 +69,6 @@
     </main>
     <!-- Call to scripts sources -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="/Assignments/Assignment_1/script.js"></script>
+    <script src="./..Assignment_1/script.js"></script>
 </body>
 </html>
