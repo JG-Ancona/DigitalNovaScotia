@@ -47,12 +47,6 @@
                 <li><a href="mailto:email@example.com">New account</a></li>
             </ul>
         </div>
-        <div>
-            <?php
-                print_r($Form_user);
-                unset($_SESSION['Form_user']);
-            ?>
-        </div>
         
     
     </main>
