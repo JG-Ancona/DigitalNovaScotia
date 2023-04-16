@@ -8,7 +8,7 @@
     
     if(isset($_POST['log_out_btn'])) {
         session_destroy();
-        header('Location:login.php');
+        header('Location:login_page.php');
     }
 ?>
 
