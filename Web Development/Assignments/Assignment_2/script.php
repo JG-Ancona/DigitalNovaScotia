@@ -11,7 +11,19 @@ if (isset($_POST['sub'])) {
     switch ($Rol) {
         case 'Admin':
             header("Location:admin_page.php");
-            # code...
+
+            break;
+
+
+        case 'Manager':
+            header("Location:admin_page.php");
+
+            break;
+
+
+        case 'CEO':
+            header("Location:ceo_page.php");
+
             break;
 
         default:
@@ -19,10 +31,5 @@ if (isset($_POST['sub'])) {
             break;
     }
 
-
-    // if ($name === 'NAME1' and $pass === 'PASS1') {
-    //     header("Location:profil.php");
-    // } else
-    //     echo "Credentials not matched.";
 }
 ?>
