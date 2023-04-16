@@ -2,6 +2,12 @@
     session_start();
     $Form_user = $_SESSION['Form_user'];
     $user_name= $Form_user['Last_name'].', '.$Form_user['First_name'];
+
+    // Close session - log out button
+    if(isset($_POST['log_out_btn'])) {
+        session_destroy();
+        header('Location:login_page.php');
+    }
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +39,9 @@
     </header>
     <main>
         <div class="log_out">
-            <a href="./../Assignment_2/admin_login.html">Log out</a>
+            <form method="post">
+                <button type="input" class="submit_btn" name="log_out_btn">Log out</button>
+            </form>
         </div>
         <div class="welcome_user">
             <h1>Hello <?php echo $user_name;?></h1>
