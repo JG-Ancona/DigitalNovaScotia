@@ -27,7 +27,7 @@ button {
     font-size: 30px;
 }
 
-.form_grid {
+.form_login {
     display: grid;
     padding: 1px;
     justify-content:space-evenly ;
@@ -35,7 +35,7 @@ button {
     font-size: 17px;
 }
 
-.form_grid > div {
+.form_login > div {
     padding: 10px;
 }
 
