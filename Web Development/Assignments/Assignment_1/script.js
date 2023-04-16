@@ -7,3 +7,7 @@ $(document).ready(function() {
 })
 
 //---------------------------------------------
+
+// $(".submit_btn").click(function() {
+//     $(this).closest("form").attr("action","./admin_page.php"); 
+// });
