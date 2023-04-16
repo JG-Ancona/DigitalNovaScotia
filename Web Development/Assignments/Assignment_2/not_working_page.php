@@ -30,9 +30,9 @@
         <img id="nav_button" class="header_button" src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/hamburger.png" alt="Menu">
         <nav class="header_nav">
             <ul class="nav_menu">
-                <li>Home</li>
+                <li>Home<a href="./../Assignment_1/index.php"></li>
                 <li>Book a trip</li>
-                <li><a href="/Assignments/Assignment_2/admin_login.html">Admin login</a></li>
+                <li><a href="./login_page.php">Admin login</a></li>
 
             </ul>
         </nav>
@@ -41,7 +41,9 @@
     </header>
     <main>
         <div class="log_out">
-            <a href="/Assignments/Assignment_2/admin_login.html">Log out</a>
+            <form method="post">
+                <button type="input" class="submit_btn" name="log_out_btn">Log out</button>
+            </form>
         </div>
         <div class="welcome_user">
             <h1>Hello <?php echo $user_name;?></h1>
