@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    //print_r($_SESSION);
+    $Form_user = $_SESSION['Form_user'];
+    $user_name= $Form_user['Last_name'].', '.$Form_user['First_name'];
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +24,7 @@
         <img id="nav_button" class="header_button" src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/hamburger.png" alt="Menu">
         <nav class="header_nav">
             <ul class="nav_menu">
-                <li>Home</li>
+                <li><a href="./../Assignment_1/index.php" >Home</li>
                 <li>Book a trip</li>
                 <li><a href="/Assignments/Assignment_2/admin_login.html">Admin login</a></li>
 
@@ -30,7 +38,7 @@
             <a href="/Assignments/Assignment_2/admin_login.html">Log out</a>
         </div>
         <div class="welcome_user">
-            <h1>Hello $user</h1>
+            <h1>Hello <?php echo $user_name;?></h1>
         </div>
         
         <div class="user_menu">
