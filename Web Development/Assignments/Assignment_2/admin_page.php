@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    print_r($_SESSION);
+    $Form_user = $_SESSION['Form_user'];
+    $user_name= $Form_user['Last_name'].', '.$Form_user['First_name'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +37,7 @@
             <a href="./../Assignment_2/admin_login.html">Log out</a>
         </div>
         <div class="welcome_user">
-            <?php $user_name= $_POST['Last_name'].', '.$_POST['First_name'];?>
+            
             <h1>Hello <?php echo $user_name;?></h1>
         </div>
         
@@ -43,10 +50,10 @@
         </div>
         <div>
             <?php
-                print_r($_POST);
+                print_r($Form_user);
+                unset($_SESSION['Form_user']);
             ?>
         </div>
-        
         
     
     </main>
