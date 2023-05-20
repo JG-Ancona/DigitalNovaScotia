@@ -37,7 +37,46 @@
 
         <section class="content">   <!-- Text content divided -->
 
-            <div class="city">
+        <?php
+            // Connect to the MySQL database
+            $dbUserName = "dns";
+            $dbPassword = "dns";
+            $dbServer = "localhost";
+            $dbName = "dns_adventures";
+
+            $connection = new mysqli($dbServer, $dbUserName, $dbPassword, $dbName);
+
+            // Check connection
+            if ($connection->connect_errno) {
+                exit("Database Connection Failed. Reason: " . $coconnection->connect_error);
+            }
+
+            // Query to retrieve data from the db
+            $query = "SELECT * FROM adventure";
+            $result = $connection->query($query);
+
+            if ($result->num_rows > 0) {
+                // Print data inside <div> elements
+                while ($row = $result->fetch_assoc()) {
+                    echo '<div class="city">';
+                    echo "<h2>" . $row["heading"] . "</h2>";
+                    echo '<ul class="info_date">';
+                    echo "<li>Date: " . $row["tripDate"] . "</li>";
+                    echo "<li>Duration: " . $row["duration"] . "</li>";
+                    echo "</ul>";
+                    //echo "<h2>" . $row["heading"] . "</h2>";
+                    echo "<h3>Summary</h3>";
+                    echo "<p>" . $row["summary"] . "</p>";
+                    echo "</div>";
+                }
+            } else {
+                echo "No data found.";
+            }
+
+            // Close the database connection
+            $connection->close();
+            ?>
+            <!-- <div class="city">
                 <h2>Halifax</h2>
 
                 <ul class="info_date">
@@ -72,7 +111,7 @@
                     offering stunning views of rugged coastlines, waterfalls, and forests.
                 </p>
 
-            </div>
+            </div> -->
 
         </section>
     </main>
