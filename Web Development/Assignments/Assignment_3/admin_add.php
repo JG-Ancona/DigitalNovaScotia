@@ -36,7 +36,7 @@
                 Admin - Add Adventure
             </p>
 
-            <form class="adv_form" method="post" action="./script.php">
+            <form class="adv_form" method="post" action="./db_push.php">
                 <div>
                     <br>
                     Heading:<br>
