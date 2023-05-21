@@ -66,3 +66,24 @@ button {
 .user_menu > ul > li {
     margin: 10px 0 10px 0;
 }
+
+.adv_form {
+    display: grid;
+    padding: 20px 25% 20px 25%;
+}
+
+#summary-box {
+    height: 200px;
+    width: 100%;
+}
+
+#link_home {
+    display: flex;
+    font-size: 20px;
+    margin: 40px auto 20px auto;
+}
+
+#link_home > a {
+    margin: auto;
+    padding: 1px auto 1px  auto;
+}

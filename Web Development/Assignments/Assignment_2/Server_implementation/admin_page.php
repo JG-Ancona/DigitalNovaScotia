@@ -55,6 +55,7 @@
             <ul>
                 <li><a href="./not_working_page.php">My computer is not working</a></li>
                 <li><a href="mailto:email@example.com">New account</a></li>
+                <li><a href="./admin_add.php">Add new adventure</a></li>
             </ul>
         </div>
         
