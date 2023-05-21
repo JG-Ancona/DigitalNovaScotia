@@ -39,8 +39,8 @@
 
         <?php
             // Connect to the MySQL database
-            $dbUserName = "dns";
-            $dbPassword = "dns";
+            $dbUserName = "dns";//id20615353_dns
+            $dbPassword = "dns";//y8w)fGboKE#RoY+
             $dbServer = "localhost";
             $dbName = "dns_adventures";
 
